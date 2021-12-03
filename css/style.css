@@ -1,5 +1,7 @@
-.cd-words-wrapper {
-  display: inline-block;
-  position: relative;
-  text-align: left;
+* {
+  background-color: #212529;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
