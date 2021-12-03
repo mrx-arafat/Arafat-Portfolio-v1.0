@@ -12,6 +12,29 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* header left contents*/
+
+.social-share-part ul {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+}
+.social-share-part ul li {
+  font-size: 35px;
+  line-height: 30px;
+  color: white;
+  background-color: #22252a;
+  border: 0.2px solid rgb(36, 35, 35);
+  padding: 10px 12px;
+  margin-right: 35px;
+  border-radius: 5px;
+  box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.25),
+    0 0.5em 1.25em rgba(43, 42, 42, 0.658);
+}
+
+.words-wrapper {
+  font-size: 48px;
+}
 /* header right image */
 .thumbnail {
   border: 0.5px solid black;
