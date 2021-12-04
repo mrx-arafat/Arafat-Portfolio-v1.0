@@ -303,3 +303,9 @@ body {
   border-radius: 6px;
   background: linear-gradient(to right bottom, #212428, #16181c);
 }
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(to right bottom, #141618, #191b1f);
+  transition: 0.4s;
+}
