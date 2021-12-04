@@ -2,7 +2,7 @@
 
 * {
   background-color: #212529;
-  color: white;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -72,4 +72,69 @@ section::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: white;
+}
+
+/* card design for portfolio*/
+
+.card {
+  height: auto;
+  width: 30%;
+}
+.card .image img {
+  display: block;
+  width: 95%;
+  margin: 10px auto;
+}
+.card .image img:hover {
+  transform: scale(1.4);
+  transition: 0.4s ease-in-out;
+}
+
+/* wrapper show less */
+
+.wrapper {
+  width: 100%;
+
+  background: #212529;
+  padding: 20px 5px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.wrapper ul {
+  height: 70px;
+  overflow: hidden;
+}
+
+.wrapper ul.active {
+  height: auto;
+}
+
+.wrapper ul li {
+  list-style: none;
+  position: relative;
+}
+
+.wrapper ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #bfbfbf;
+}
+
+.wrapper .toggle_btn {
+  margin-top: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.wrapper .toggle_btn.active .fas {
+  transform: rotate(180deg);
 }
