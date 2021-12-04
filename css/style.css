@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap");
 
 * {
-  background-color: #212529;
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,11 +11,8 @@ body {
 }
 
 /* header left contents*/
-section::after {
-  height: 1px;
-  background: #479cc7;
-  content: "";
-  margin: 0 auto;
+.header {
+  background-color: #212529;
 }
 .social-share-part ul {
   list-style: none;
@@ -45,6 +40,19 @@ section::after {
 .words-wrapper {
   font-size: 48px;
 }
+
+/* links */
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+.links a {
+  text-decoration: none;
+}
+
 /* header right image */
 .thumbnail {
   border: 0.5px solid black;
@@ -76,23 +84,32 @@ section::after {
 }
 
 /* card design for portfolio*/
+.portfolio {
+  background-color: #212529;
+}
 
 .card-collection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
+  background-color: #212529;
 }
 
-.card {
+.cardx {
+  background-color: #212529;
+  padding: 5px;
   display: block;
   height: auto;
+  border: 0.5px solid black;
+  box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.25),
+    0 0.5em 1.25em rgba(0, 0, 0, 0.5);
 }
-.card .image img {
+.cardx .image img {
   display: block;
   width: 95%;
   margin: 10px auto;
 }
-.card .image img:hover {
+.cardx .image img:hover {
   transform: scale(1.4);
   transition: 0.4s ease-in-out;
 }
