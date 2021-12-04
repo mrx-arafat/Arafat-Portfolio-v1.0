@@ -13,6 +13,7 @@ body {
 /* header left contents*/
 .header {
   background-color: #212529;
+  padding-bottom: 50px;
 }
 .social-share-part ul {
   list-style: none;
@@ -24,18 +25,20 @@ body {
   line-height: 30px;
   color: white;
   background-color: #22252a;
-  border: 0.2px solid #666363;
+  border: 0.2px solid #222222;
   padding: 10px 12px;
   margin-right: 35px;
-  border-radius: 5px;
-  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.25),
+    0 0.5em 1.25em rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: #212428;
 }
 .social-share-part ul li:hover {
   transform: translateY(-3px);
   transition: 0.3s ease-in-out;
 }
 .social-share-part {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 .words-wrapper {
   font-size: 48px;
@@ -167,7 +170,14 @@ body {
 }
 
 /*contact */
+.contact-section {
+  padding: 100px auto;
+  background-color: #212529;
+}
 
+.contact-heading {
+  padding-bottom: 50px;
+}
 .contact-about-area {
   padding: 30px;
   box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.25),
@@ -175,6 +185,17 @@ body {
   border-radius: 10px;
   background-color: #212428;
   height: 100%;
+}
+
+.phone a {
+  text-decoration: none;
+  color: #e4e6ea;
+  font-size: 20px;
+}
+.mail a {
+  text-decoration: none;
+  color: #e4e6ea;
+  font-size: 20px;
 }
 
 .contact-form-wrapper {
@@ -223,7 +244,8 @@ body {
   box-shadow: none;
 }
 .contact-form-wrapper textarea {
-  min-height: 235px;
+  min-height: 250px;
+  min-width: 330px;
   background-color: #191b1e;
   border-radius: 6px;
   height: 55px;
@@ -270,4 +292,14 @@ body {
 }
 .contact-form-wrapper .email-area {
   margin-top: 30px;
+}
+
+.contact-btn {
+  margin: 15px auto;
+  border: 0;
+  color: #ff014f;
+  width: 60%;
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(to right bottom, #212428, #16181c);
 }
