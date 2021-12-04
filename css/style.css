@@ -165,3 +165,109 @@ body {
 .wrapper .toggle_btn.active .fas {
   transform: rotate(180deg);
 }
+
+/*contact */
+
+.contact-about-area {
+  padding: 30px;
+  box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.25),
+    0 0.5em 1.25em rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: #212428;
+  height: 100%;
+}
+
+.contact-form-wrapper {
+  box-shadow: 0 0.25em 0.25em -0.125em rgba(0, 0, 0, 0.25),
+    0 0.5em 1.25em rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  margin-left: 20px;
+  height: 100%;
+  background-color: #212529;
+}
+
+.contact-form-wrapper label {
+  font-size: 12px;
+  color: #a0a8b3;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  text-align: left;
+  display: block;
+}
+.contact-form-wrapper input {
+  background-color: #191b1e;
+  border-radius: 6px;
+  height: 55px;
+  transition: 0.4s ease;
+  border: 2px solid #191b1e;
+  padding: 0 15px;
+  font-size: 14px;
+
+  color: #c4cfde;
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 479px) {
+  .contact-form-wrapper input {
+    margin-bottom: 15px;
+  }
+}
+.contact-form-wrapper input:focus {
+  background-color: #191b1e;
+  color: #e4e6ea;
+  border-color: #ff014f;
+  box-shadow: none;
+}
+.contact-form-wrapper textarea {
+  min-height: 235px;
+  background-color: #191b1e;
+  border-radius: 6px;
+  height: 55px;
+  transition: 0.4s ease;
+  border: 2px solid #191b1e;
+  padding: 0 15px;
+  font-size: 14px;
+
+  color: #c4cfde;
+  box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 767px) {
+  .contact-form-wrapper textarea {
+    min-height: 150px;
+  }
+}
+.contact-form-wrapper textarea:focus {
+  background-color: #191b1e;
+  color: #e4e6ea;
+  border-color: #ff014f;
+  box-shadow: none;
+}
+.contact-form-wrapper .introduce {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form-wrapper .introduce input {
+  width: 100%;
+}
+.contact-form-wrapper a.rn-btn span {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  transform: translateY(-3px);
+  margin-left: 5px;
+}
+.contact-form-wrapper a.rn-btn svg {
+  transition: translateY(-3px);
+}
+.contact-form-wrapper a:hover svg {
+  margin-left: 10px;
+}
+.contact-form-wrapper .email-area {
+  margin-top: 30px;
+}
