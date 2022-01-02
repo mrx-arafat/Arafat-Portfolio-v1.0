@@ -30,7 +30,7 @@ renderList = (doc) => {
   main_div.appendChild(card_body);
   div.appendChild(main_div);
 };
-
+//db collections
 db.collection("comments").onSnapshot((snap) => {
   let changes = snap.docChanges();
   changes.forEach((change) => {
