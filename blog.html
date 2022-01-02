@@ -1,176 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arafat Commenting System</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css" />
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-
-    <!-- Style -->
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="style.css">
-
-    <title>Arafat| Blog</title>
   </head>
+
   <body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg py-3">
-      <div class="container-fluid">
-        <a class="navbar-brand mx-lg-3" href="#">Arafat's Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="/"
-                >Home</a
-              >
-            </li>
-    
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonial</a>
-            </li>
-            <li class="nav-item">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Blogs</a>
-              </li>
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-          
+    <div class="container">
+      <h4 class="mt-3 text-center border-bottom pb-2">
+        Blog Page: Comment Korun
+      </h4>
+      <form id="comments">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            class="form-control"
+            autocomplete="off"
+          />
         </div>
-      </div>
-    </nav>
-
-    <div class="content">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10">
-            <div class="row align-items-center">
-              <div class="col-lg-7 mb-5 mb-lg-0">
-                <h2 class="mb-5">
-                  Fill the form. <br />
-                  It's easy.
-                </h2>
-<!-- Form Start -->
-                <form
-                  class="border-right pr-5 mb-5"
-                  method="post"
-                  id="contactForm"
-                  name="contactForm"
-                >
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="fname"
-                        id="fname"
-                        placeholder="First name"
-                      />
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="lname"
-                        id="lname"
-                        placeholder="Last name"
-                      />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <textarea
-                        class="form-control"
-                        name="message"
-                        id="message"
-                        cols="30"
-                        rows="7"
-                        placeholder="Write your message"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <input
-                        type="submit"
-                        value="Send Message"
-                        class="btn btn-primary rounded-0 py-2 px-4"
-                      />
-                      <span class="submitting"></span>
-                    </div>
-                  </div>
-                </form>
-
-                <div id="form-message-warning mt-4"></div>
-                <div id="form-message-success">
-                  Your message was sent, thank you!
-                </div>
-              </div>
-              <div class="col-lg-4 ml-auto">
-                <h3 class="mb-4">Let's talk about everything.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Nihil deleniti itaque similique magni. Magni, laboriosam
-                  perferendis maxime!
-                </p>
-                <p><a href="#">Read more</a></p>
-              </div>
-            </div>
-          </div>
+        <div class="mb-3">
+          <label for="comment" class="form-label">Write a Comment</label>
+          <textarea id="comment" name="comment" class="form-control"></textarea>
         </div>
-      </div>
+        <button class="btn btn-outline-primary">Post Comment</button>
+      </form>
     </div>
+    <div class="container cont"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCrqM6SZ2VMLojg7i7c_CzWnTqLt0Lx7U0",
+        authDomain: "real-time-comment-b123c.firebaseapp.com",
+        projectId: "real-time-comment-b123c",
+        storageBucket: "real-time-comment-b123c.appspot.com",
+        messagingSenderId: "31167968430",
+        appId: "1:31167968430:web:5cfabbb2df75464930293f",
+      };
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
-
-    
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>
