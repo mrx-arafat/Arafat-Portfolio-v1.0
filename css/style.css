@@ -105,6 +105,16 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .inner-img img {
+    height: 400px;
+    width: 350px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0;
+    cursor: pointer;
+  }
 }
 
 .cardx {
